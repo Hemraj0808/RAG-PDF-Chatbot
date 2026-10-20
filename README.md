@@ -87,8 +87,8 @@ RAG PDF chatbot/
 After you push the project to GitHub, clone it with:
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
-cd YOUR-REPOSITORY
+git clone https://github.com/Hemraj0808/RAG-PDF-Chatbot.git
+cd RAG-PDF-Chatbot
 ```
 
 Replace the URL with your actual repository URL.
