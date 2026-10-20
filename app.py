@@ -12,6 +12,14 @@ from openai import OpenAI
 # Load API key from .env
 load_dotenv()
 
+api_key = st.secrets.get("OPENROUTER_API_KEY") or os.getenv(
+    "OPENROUTER_API_KEY"
+)
+
+if not api_key:
+    st.error("OPENROUTER_API_KEY is missing. Configure it in Streamlit Secrets.")
+    st.stop()
+
 # Configure Streamlit
 st.set_page_config(
     page_title="RAG PDF Chatbot",
